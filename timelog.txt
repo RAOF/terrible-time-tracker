@@ -1,0 +1,276 @@
+2026-04-07 10:31: arrived**
+2026-04-07 11:10: managering: Set up time logging
+2026-04-07 12:21: managering: Development plan
+2026-04-07 12:29: tea **
+2026-04-07 12:55: Standup
+2026-04-07 13:29: lunch **
+2026-04-07 13:45: min code: Reviews
+2026-04-07 14:06: managering: Set up time logging
+2026-04-07 16:26: code: Reviews
+2026-04-07 16:49: tea **
+2026-04-07 17:38: code: Reviews
+2026-04-07 17:57: code: Spec writing
+
+2026-04-08 07:01: arrive **
+2026-04-08 07:29: standup
+2026-04-08 09:09: Breakfast **
+2026-04-08 11:27: SRU
+2026-04-08 12:32: lunch **
+2026-04-08 12:56: meeting
+2026-04-08 13:43: lunch **
+2026-04-08 14:11: mir: MIR processing
+2026-04-08 15:04: SRU
+2026-04-08 15:54: managering
+2026-04-08 18:03: SRU
+
+2026-04-09 07:04: arrive **
+2026-04-09 08:03: meeting
+2026-04-09 10:03: breakfast **
+2026-04-09 11:37: stuff **
+2026-04-09 11:40: mir: MIR processing
+2026-04-09 12:00: managering
+2026-04-09 13:20: meeting
+2026-04-09 14:06: lunch **
+2026-04-09 15:13: SRU: GNOME MRE stuff
+2026-04-09 16:47: stuff **
+2026-04-09 17:47: meeting
+
+2026-04-10 06:30: arrive **
+2026-04-10 06:47: meeting: SRU
+2026-04-10 07:30: back to bed **
+2026-04-10 08:03: meeting: standup
+2026-04-10 09:26: breakfast **
+2026-04-10 10:00: interview: prep
+2026-04-10 11:08: interview: interview
+2026-04-10 12:29: interview: write-up
+2026-04-10 13:29: meeting: retro/demo
+2026-04-10 14:01: lunch
+2026-04-10 15:50: mir: libxml++ MIR
+2026-04-10 16:17: SRU: GNOME MRE list updating
+2026-04-10 17:00: mir: Roadmap planning poker
+2026-04-10 18:04: meeting: Tarek 1:1
+
+2026-04-13 09:00: arrive **
+2026-04-13 10:30: sysadmin **
+2026-04-13 11:37: vaccination **
+2026-04-13 12:30: AA
+2026-04-13 13:30: meeting: Planning
+2026-04-13 14:51: lunch **
+2026-04-13 16:00: misc task cleanup
+2026-04-13 16:50: mir: Reviews
+2026-04-13 17:15: break **
+2026-04-13 17:41: AA
+2026-04-13 18:06: AA
+
+2026-05-21 10:26: arrive **
+
+2026-05-22 06:36: arrive **
+2026-05-22 07:46: meeting: SRU -- meeting SRU
+2026-05-22 09:16: breakfast **
+
+2026-05-25 09:31: arrive **
+2026-05-25 11:57: mir: Reviews --  mir review
+2026-05-25 12:30: AA
+2026-05-25 13:31: meeting: planning -- mir meeting
+2026-05-25 14:16: meeting: ad-hoc code review w/ Robert -- mir meeting
+2026-05-25 14:44: mir: Reviews -- mir review
+2026-05-25 15:54: lunch **
+2026-05-25 18:15: AA
+
+2026-05-26 09:28: arrive **
+2026-05-26 10:52: mir: Reviews -- mir review
+2026-05-26 11:20: AA
+2026-05-26 12:30: mir: update logging PRs -- mir coding
+2026-05-26 12:53: mir: standup -- meeting mir
+2026-05-26 14:23: lunch **
+2026-05-26 17:00: mir: logging PRs -- coding mir
+2026-05-26 17:38: mir: MirBox strategy meeting -- meeting mir manager
+2026-05-26 18:01: mir: logging PRs -- mir coding
+2026-05-26 18:12: mir: standup -- mir meeting
+
+2026-05-27 06:59: arrive **
+2026-05-27 07:15: mir: standup -- mir meeting
+2026-05-27 10:05: breakfast **
+2026-05-27 10:55: mir: Reviews -- mir reviews
+2026-05-27 14:37: lunch **
+
+2026-05-28 09:29: arrive **
+
+2026-05-29 07:00: arrive **
+2026-05-29 07:54: mir: standup -- meeting mir
+2026-05-29 09:02: breakfast **
+2026-05-29 09:43: mir: Matrix setup -- mir manager
+2026-05-29 11:15: mir: Matrix setup -- mir manager
+2026-05-29 11:54: coffee **
+2026-05-29 12:35: mir: Reviews -- mir review
+2026-05-29 13:09: mir: standup -- mir meeting standup
+2026-05-29 15:09: lunch **
+2026-05-29 17:57: mir: Reviews -- mir review
+
+2026-06-01 09:09: arrive **
+2026-06-01 10:08: mir: Reviews -- mir reviews
+2026-06-01 11:46: mir: Reviews -- mir reviews
+2026-06-01 12:46: AA: process-removals -- AA
+2026-06-01 14:04: lunch **
+2026-06-01 18:22: managering: James' development plan -- mir manager
+
+2026-06-02 09:04: arrive **
+2026-06-02 10:03: managering -- manager
+2026-06-02 12:30: performance plan -- mir manager
+
+2026-06-02 13:03: mir: standup -- mir meeting
+2026-06-02 13:53: lunch **
+2026-06-02 17:01: manager: performance plans -- mir manager
+2026-06-02 17:40: meeting: Saviq 1:1 -- mir meeting
+2026-06-02 17:59: break **
+2026-06-02 18:21: meeting: standup -- meeting mir standup
+
+2026-06-03 07:00: arrive **
+2026-06-03 07:51: meeting: standup -- mir meeting
+2026-06-03 09:32: breakfast **
+
+2026-06-04 07:00: arrive **
+2026-06-04 07:50: meeting: Matt 1:1 -- mir meeting
+2026-06-04 09:30: breakfast **
+2026-06-04 12:28: mir: update logging PRs -- mir coding
+2026-06-04 12:40: meeting: standup -- mir meeting
+2026-06-04 13:26: meeting: James 1:1 -- mir meeting manager
+2026-06-04 14:15: lunch **
+2026-06-04 16:47: mir: update logging PRs -- mir coding
+2026-06-04 18:00: mir: Reviews -- mir reviews
+
+2026-06-05 07:00: arrive **
+2026-06-05 07:32: meeting: Standup -- mir meeting
+2026-06-05 09:32: breakfast **
+2026-06-05 10:47: mir: update logging PRs -- mir coding
+2026-06-05 11:05: mir: Reviews -- mir review
+2026-06-05 11:35: mir: update logging PRs -- mir coding
+2026-06-05 13:30: lunch **
+2026-06-05 14:40: meeting: retro/demo -- mir meeting
+2026-06-05 17:01: mir: logging PR symbols wrangling -- mir coding
+
+2026-06-09 07:13: arrive **
+2026-06-09 07:59: meeting: mir-rs -- meeting mir
+2026-06-09 09:44: breakfast **
+2026-06-09 10:46: mir: mir-rs feedback -- mir review spec
+2026-06-09 11:20: mir: logging PR update -- mir coding
+2026-06-09 12:05: mir: Add Jira task for symbols generator -- mir manager
+2026-06-09 12:32: mir: Reviews -- mir reviews
+2026-06-09 13:27: meeting: Planning -- meeting mir
+2026-06-09 16:32: stuff **
+2026-06-09 17:00: mir: Reviews -- mir reviews
+2026-06-09 17:54: meeting: Mir strategy -- mir meeting manager
+2026-06-09 18:19: meeting: Standup -- mir meeting standup
+
+2026-06-10 07:00: arrive **
+2026-06-10 07:33: meeting: AU/US/NZ standup -- mir meeting standup
+2026-06-10 09:15: breakfast **
+2026-06-10 11:21: mir: Reviews -- mir reviews
+2026-06-10 12:00: ??? **
+2026-06-10 12:30: interview: Prep -- interview
+2026-06-10 12:45: meeting: AU/NZ Standup -- mir meeting standup
+2026-06-10 13:10: meeting: Robert 1:1 -- mir meeting manager 1:1
+2026-06-10 14:00: lunch **
+2026-06-10 15:06: interview: Interview -- interview
+2026-06-10 16:01: interview: Write up -- interview
+2026-06-10 17:12: SRU -- SRU
+2026-06-10 18:07: mir: logging PR cleanup -- mir coding
+
+2026-06-11 07:00: arrive **
+2026-06-11 07:49: meeting: Matt 1:1 -- meeting mir
+2026-06-11 09:43: breakfast **
+2026-06-11 12:30: mir: Reviews, follow up for logging PR, etc -- mir coding review
+2026-06-11 12:46: meeting: AU/NZ Standup -- mir meeting standup
+2026-06-11 13:31: meeting: James 1:1 -- mir meeting manager
+2026-06-11 14:12: mir: Reviews -- mir reviews
+2026-06-11 15:02: mir: logging PR followup -- mir coding
+2026-06-11 15:25: mir: Reviews -- mir review
+2026-06-11 15:58: Booking flights
+2026-06-11 16:05: mir: Logging PR followup -- mir coding
+2026-06-11 16:14: mir: Reviews -- mir reviews
+2026-06-11 16:47: Reflect on the week -- managering
+2026-06-11 16:49: James' flight approvals -- manager
+
+2026-06-12 07:00: arrive **
+2026-06-12 07:23: meeting: Standup -- mir meeting
+2026-06-12 09:23: breakfast **
+
+2026-06-15 09:00: arrive **
+2026-06-15 10:20: Archive Admin: process-removals fiddling -- AA
+2026-06-15 11:00: interview: prep -- interview
+2026-06-15 12:00: interview -- interview
+2026-06-15 12:29: interview: writeup -- interview\
+2026-06-15 12:44: meeting: standup -- meeting mir
+2026-06-15 13:35: interview: write-up -- interview
+2026-06-15 17:12: mir WLCS reviews -- mir review
+
+2026-06-16 09:00: arrive **
+2026-06-16 10:07: AA: process-removals-ng spike -- AA
+2026-06-16 10:53: mir: ShmBacking fiddling -- mir coding
+2026-06-16 11:23: mir: Reviews -- mir review
+2026-06-16 12:31: SRU -- SRU
+2026-06-16 13:02: meeting: standup -- meeting mir standup
+
+2026-06-17 07:00: arrive **
+2026-06-17 07:53: meeting: standup -- mir meeting
+2026-06-17 09:13: breakfast **
+2026-06-17 12:30: spec review -- mir review
+2026-06-17 12:50: meeting: Standup -- mir meeting
+2026-06-17 12:58: meeting: Robert 1:1 -- mir meeting manager 1:1
+2026-06-17 14:00: lunch **
+2026-06-17 15:02: meeting: James peer review -- mir meeting review
+2026-06-17 15:56: Decoration spec -- mir spec
+2026-06-17 16:32: mir: Try fixing C++26 PR -- mir coding
+2026-06-17 17:00: interview: Prep -- interview
+2026-06-17 18:00: interview -- interview
+2026-06-17 18:47: interview: Write up -- interview
+
+2026-06-18 07:00: arrive **
+2026-06-18 07:52: meeting: Matt 1:1 -- meeting mir
+2026-06-18 09:47: breakfast **
+2026-06-18 10:35: misc: Catchup
+2026-06-18 11:05: mir: Crash investigation -- mir coding
+2026-06-18 12:23: lunch **
+2026-06-18 12:54: meeting: Standup -- mir meeting
+2026-06-18 13:34: meeting: James 1:1 -- mir meeting manager
+2026-06-18 15:30: mir: Crash investigation -- mir coding
+2026-06-18 16:50: Decoration spec -- mir spec
+2026-06-18 17:00: Reflect on week -- managering
+2026-06-18 17:45: meeting: Saviq 1:1 -- mir meeting
+2026-06-18 17:59: tea **
+2026-06-18 18:18: mir: standup -- meeting mir
+
+2026-06-22 09:00: arrive **
+2026-06-22 12:01: AA: process-removals-ng -- AA
+2026-06-22 12:25: meeting: Michael -- AA meeting
+2026-06-22 13:25: mir: Planning -- mir meeting
+2026-06-22 14:44: lunch **
+2026-06-22 15:19: admin -- mir
+2026-06-22 16:10: mir: What is happening with my screencast? -- mir
+2026-06-22 16:45: SRU discussion w/ kernel -- SRU meeting
+
+2026-06-23 08:31: arrive **
+2026-06-23 09:01: interview: Prep -- interview
+2026-06-23 10:04: interview -- interview
+2026-06-23 11:46: interview: Write up -- interview
+2026-06-23 12:30: mir: Multi-surface spec -- mir spec
+2026-06-23 13:01: mir: Standup -- mir meeting
+2026-06-23 13:41: lunch **
+2026-06-23 14:53: mir: Multi-surface spec -- mir spec
+2026-06-23 15:28: pickup **
+2026-06-23 16:52: mir: Reviews -- mir review
+
+2026-06-24 07:00: mir: Standup -- mir meeting
+2026-06-24 09:02: breakfast **
+2026-06-24 10:04: admin -- admin
+2026-06-24 12:28: mir: Scene graph spec review -- mir spec review
+2026-06-24 12:44: mir: Standup -- mir meeting
+2026-06-24 12:54: mir: Robert 1:1 -- mir meeting
+2026-06-24 14:07: lunch **
+2026-06-24 16:17: mir: JIRA backlog investigation -- mir manager
+2026-06-24 17:17: SRU: Certification thing ping -- SRU
+2026-06-24 18:16: mir: Multi-surface spec -- mir spec
+
+2026-06-25 07:01: arrive **
+2026-06-25 07:17: mir: Matt 1:1 -- meeting mir
+2026-06-25 09:07: breakfast **

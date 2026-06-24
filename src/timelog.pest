@@ -1,0 +1,40 @@
+// Grammar for timelog.txt files.
+//
+// Each non-empty line has the form:
+//   DATE TIME: [category: ] description [nonwork] [-- tag tag ...]
+// where `category` and `nonwork` (2+ "*") are optional.
+//
+// Whitespace is significant in this format, so we do NOT define an implicit
+// WHITESPACE rule and instead handle spaces explicitly.
+
+file = { SOI ~ (entry | blank_line)* ~ EOI }
+
+blank_line = _{ NEWLINE }
+
+entry = {
+    date ~ " " ~ time ~ ":" ~ " "
+    ~ (category ~ ": ")?
+    ~ description
+    ~ nonwork?
+    ~ tag_list?
+    ~ NEWLINE?
+}
+
+date = { ASCII_DIGIT{4} ~ "-" ~ ASCII_DIGIT{2} ~ "-" ~ ASCII_DIGIT{2} }
+time = { ASCII_DIGIT{2} ~ ":" ~ ASCII_DIGIT{2} }
+
+// Category text up to the first ": " (colon followed by a space). This allows
+// categories with spaces ("Archive Admin") while ignoring time-like or
+// description colons such as "1:1" that are not followed by a space.
+category = { (!(": ") ~ !NEWLINE ~ ANY)+ }
+
+// Description runs until a non-work tag ("*"), the tag separator ("--"), or the
+// end of the line. Single dashes (e.g. "ad-hoc") are allowed.
+description = { (!("--") ~ !"*" ~ !NEWLINE ~ ANY)+ }
+
+// Non-work marker: 2 or more consecutive "*", optionally preceded by spaces.
+nonwork = { " "* ~ "*"{2,} }
+
+// Tag list introduced by "--", followed by space-separated tags.
+tag_list = { " "* ~ "--" ~ (" "+ ~ tag)+ }
+tag = { (!" " ~ !NEWLINE ~ ANY)+ }
