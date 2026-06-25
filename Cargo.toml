@@ -5,6 +5,7 @@ edition = "2024"
 
 [dependencies]
 chrono = "0.4"
+chrono-humanize = "0.2"
 clap = { version = "4", features = ["derive"] }
 pest = "2"
 pest_derive = "2"

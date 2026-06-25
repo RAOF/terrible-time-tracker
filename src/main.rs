@@ -3,6 +3,7 @@ use std::error::Error;
 use std::path::PathBuf;
 
 use chrono::NaiveDate;
+use chrono_humanize::{Accuracy, HumanTime, Tense};
 use clap::Parser;
 use time_tracker::parse_timelog;
 
@@ -68,13 +69,10 @@ fn parse_day_length(s: &str) -> Result<f64, String> {
     Ok(total)
 }
 
-/// Format a duration in seconds as a trimmed "N hour(s)" string.
-fn format_hours(secs: f64) -> String {
-    let hours = secs / 3600.0;
-    let text = format!("{hours:.2}");
-    let trimmed = text.trim_end_matches('0').trim_end_matches('.');
-    let unit = if trimmed == "1" { "hour" } else { "hours" };
-    format!("{trimmed} {unit}")
+/// Format a duration in seconds as a precise, human-readable string.
+fn format_duration(secs: f64) -> String {
+    let duration = chrono::Duration::milliseconds((secs * 1000.0).round() as i64);
+    HumanTime::from(duration).to_text_en(Accuracy::Precise, Tense::Present)
 }
 
 fn main() -> Result<(), Box<dyn Error>> {
@@ -141,13 +139,13 @@ fn main() -> Result<(), Box<dyn Error>> {
         println!(
             "  {category}: {}% ({})",
             percent(*secs),
-            format_hours(*secs)
+            format_duration(*secs)
         );
     }
     println!(
         "  untracked: {}% ({})",
         percent(untracked),
-        format_hours(untracked)
+        format_duration(untracked)
     );
 
     Ok(())
