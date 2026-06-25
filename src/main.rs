@@ -95,8 +95,9 @@ fn main() -> Result<(), Box<dyn Error>> {
         .collect();
     in_range.sort_by_key(|e| e.date);
 
-    // Accumulate per-category time.
+    // Accumulate per-category and per-tag time.
     let mut category_secs: HashMap<String, f64> = HashMap::new();
+    let mut tag_secs: HashMap<String, f64> = HashMap::new();
     let mut days: HashSet<NaiveDate> = HashSet::new();
 
     let mut prev_date = None;
@@ -112,8 +113,15 @@ fn main() -> Result<(), Box<dyn Error>> {
         };
         prev_date = Some(entry.date);
 
-        if duration > 0.0 && !entry.non_work && !entry.category.is_empty() {
-            *category_secs.entry(entry.category.clone()).or_insert(0.0) += duration;
+        if duration > 0.0 && !entry.non_work {
+            if !entry.category.is_empty() {
+                *category_secs.entry(entry.category.clone()).or_insert(0.0) += duration;
+            }
+            // A single entry can carry several tags; each gets the full
+            // duration, so tag totals may overlap and exceed 100%.
+            for tag in &entry.tags {
+                *tag_secs.entry(tag.clone()).or_insert(0.0) += duration;
+            }
         }
     }
 
@@ -147,6 +155,20 @@ fn main() -> Result<(), Box<dyn Error>> {
         percent(untracked),
         format_duration(untracked)
     );
+
+    // Sort tags by time spent, descending (ties broken by name).
+    let mut tags_ranked: Vec<(&String, f64)> = tag_secs.iter().map(|(t, s)| (t, *s)).collect();
+    tags_ranked.sort_by(|a, b| b.1.total_cmp(&a.1).then_with(|| a.0.cmp(b.0)));
+
+    println!("Tag:");
+    if tags_ranked.is_empty() {
+        println!("  (no tags in range)");
+    } else {
+        // An entry may have multiple tags, so these percentages can sum past 100%.
+        for (tag, secs) in &tags_ranked {
+            println!("  {tag}: {}% ({})", percent(*secs), format_duration(*secs));
+        }
+    }
 
     Ok(())
 }
