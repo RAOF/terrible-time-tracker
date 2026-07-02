@@ -100,6 +100,12 @@ fn main() -> Result<(), Box<dyn Error>> {
     let mut tag_secs: HashMap<String, f64> = HashMap::new();
     let mut days: HashSet<NaiveDate> = HashSet::new();
 
+    // Breakdown of time within the Mir category by tag group.
+    let mut mir_total_secs = 0.0;
+    let mut mir_review_secs = 0.0;
+    let mut mir_coding_secs = 0.0;
+    let mut mir_spec_secs = 0.0;
+
     let mut prev_date = None;
     for entry in &in_range {
         let day = entry.date.date_naive();
@@ -121,6 +127,24 @@ fn main() -> Result<(), Box<dyn Error>> {
             // duration, so tag totals may overlap and exceed 100%.
             for tag in &entry.tags {
                 *tag_secs.entry(tag.clone()).or_insert(0.0) += duration;
+            }
+
+            // Within the Mir category, bucket time by tag group. "review"
+            // takes precedence, so "coding"/"spec" only count when the entry
+            // is not also a review.
+            if entry.category.eq_ignore_ascii_case("mir") {
+                let has = |tag: &str| entry.tags.iter().any(|t| t.eq_ignore_ascii_case(tag));
+                let review = has("review");
+                mir_total_secs += duration;
+                if review {
+                    mir_review_secs += duration;
+                }
+                if has("coding") && !review {
+                    mir_coding_secs += duration;
+                }
+                if has("spec") && !review {
+                    mir_spec_secs += duration;
+                }
             }
         }
     }
@@ -168,6 +192,29 @@ fn main() -> Result<(), Box<dyn Error>> {
         for (tag, secs) in &tags_ranked {
             println!("  {tag}: {}% ({})", percent(*secs), format_duration(*secs));
         }
+    }
+
+    // Breakdown of time within the Mir category, as a share of Mir time.
+    println!("Mir breakdown:");
+    if mir_total_secs == 0.0 {
+        println!("  (no Mir entries in range)");
+    } else {
+        let mir_percent = |secs: f64| (secs / mir_total_secs * 100.0).round() as i64;
+        println!(
+            "  review: {}% ({})",
+            mir_percent(mir_review_secs),
+            format_duration(mir_review_secs)
+        );
+        println!(
+            "  coding (not review): {}% ({})",
+            mir_percent(mir_coding_secs),
+            format_duration(mir_coding_secs)
+        );
+        println!(
+            "  spec (not review): {}% ({})",
+            mir_percent(mir_spec_secs),
+            format_duration(mir_spec_secs)
+        );
     }
 
     Ok(())
